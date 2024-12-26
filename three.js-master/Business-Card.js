@@ -1,6 +1,5 @@
-// Importing necessary modules
-import * as THREE from '../build/three.module.js';
-import { OrbitControls } from "../examples/jsm/controls/OrbitControls.js";
+// Importing necessary module
+import { OrbitControls } from "./examples/jsm/controls/OrbitControls.js";
 
 class App {
     constructor(layout = "default") {

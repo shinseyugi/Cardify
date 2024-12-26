@@ -1,18 +1,16 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Business-Card.css">
+    <link rel="stylesheet" href="./Business-Card.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
-    <script type="importmap">
-        {
-            "imports": {
-                "three": "../build/three.module.js"
-            }
-        }
+    <script type="module">
+        import * as THREE from 'https://cdnjs.cloudflare.com/ajax/libs/three.js/0.152.2/three.module.js';
+        // 당신의 Business-Card.js 코드를 여기에 포함하거나 Business-Card.js가 이 CDN을 사용하도록 설정하세요.
     </script>
-    <script type="module" src="Business-Card.js" defer></script>
+    
+    <script type="module" src="./Business-Card.js" defer></script>
 </head>
 <body>
     <div id="home-container">
@@ -20,11 +18,11 @@
         <p>나만의 명함을 간단하고 빠르게 제작하세요!<br />원하는 스타일을 선택하고 시작하세요.</p>
         <div class="card-options">
             <div class="card-option" id="start-student">
-                <img src="student-preview.png" alt="학생 명함 미리보기" />
+                <img src="./student-preview.png" alt="학생 명함 미리보기" />
                 <p>중동 학생 명함</p>
             </div>
             <div class="card-option" id="start-influencer">
-                <img src="influencer-preview.png" alt="인플루언서 명함 미리보기" />
+                <img src="./influencer-preview.png" alt="인플루언서 명함 미리보기" />
                 <p>인플루언서 명함</p>
             </div>
         </div>
