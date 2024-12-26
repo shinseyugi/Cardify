@@ -1,0 +1,59 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Business-Card.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "../build/three.module.js"
+            }
+        }
+    </script>
+    <script type="module" src="Business-Card.js" defer></script>
+</head>
+<body>
+    <div id="home-container">
+        <h1>Cardify</h1>
+        <p>나만의 명함을 간단하고 빠르게 제작하세요!<br />원하는 스타일을 선택하고 시작하세요.</p>
+        <div class="card-options">
+            <div class="card-option" id="start-student">
+                <img src="student-preview.png" alt="학생 명함 미리보기" />
+                <p>중동 학생 명함</p>
+            </div>
+            <div class="card-option" id="start-influencer">
+                <img src="influencer-preview.png" alt="인플루언서 명함 미리보기" />
+                <p>인플루언서 명함</p>
+            </div>
+        </div>
+    </div>
+    <div id="form-container" style="display: none;">
+        <h1>명함 정보 입력</h1>
+        <div id="form-fields">
+            <label for="name">이름:</label>
+            <input id="name" type="text" placeholder="이름을 입력하세요" required />
+    
+            <label for="class">반:</label>
+            <input id="class" type="number" placeholder="반을 입력하세요" required />
+    
+            <label for="generation">기수:</label>
+            <input id="generation" type="number" placeholder="기수를 입력하세요" required />
+    
+            <label for="club">동아리:</label>
+            <select id="club">
+                <option value="경영리더십탐구부">경영리더십탐구부</option>
+                <option value="공학탐구부">공학탐구부</option>
+                <option value="과학신문부">과학신문부</option>
+                <option value="독서토론부">독서토론부</option>
+                <!-- 동아리 목록 계속 -->
+            </select>
+        </div>
+        <button id="generate">명함 생성</button>
+    </div>
+    
+
+    <div id="webgl-container" style="display: none;"></div>
+</body>
+</html>
